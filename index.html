@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+
     <title>Personal Portfolio</title>
 </head>
 <body>
@@ -13,19 +19,19 @@
         <div class="profile_nav">
 
    
-            <img class="dp" src="images/dp.png" alt="">
+            <img class="dp" src="images/dp.avif" alt="">
 
             <h3>Wall-E</h3>
         </div>
         
 
         <ul class="nav_button_list">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#skill">Skill</a></li>
-            <li><a href="#interest">Interest</a></li>
-            <li><a href="#">Education</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a class="nav-button" href="#home">Home</a></li>
+            <li><a class="nav-button" href="#skill">Skill</a></li>
+            <li><a class="nav-button" href="#interest">Interest</a></li>
+            <li><a class="nav-button" href="#education">Education</a></li>
+            <li><a class="nav-button" href="#project">Projects</a></li>
+            <li><a class="nav-button" href="#contact">Contact</a></li>
         </ul>
     </nav>
 
@@ -41,43 +47,43 @@
         </section>
     
         <section class="skill" id="skill">
-            <div class="skill_title">
-                <h1>My Skills</h1>
+            <div class="skill_title" data-aos="fade-left" data-aos-easing="ease-in-sine">
+                <h1>MY SKILLS</h1>
                 <p>I do all kinds of neat stuff</p>
             </div>
 
             <div class="skill_cards">
-                <div class="card" id="skill_1">
+                <div class="card" id="skill_1" data-aos="fade-right" data-aos-easing="ease-in-sine">
                     <img src="logo/prog_skills.png" alt="Progammning Skill Image">
                     <h2>Programming Skills</h2>
                     <p>Proficient in Python, C++, and C programming languages with a strong grasp of data structures, algorithms, and problem-solving. Passionate about writing clean, efficient, and scalable code to develop robust software solutions.</p>
                 </div>
 
-                <div class="card" id="skill_2">
+                <div class="card" id="skill_2" data-aos="fade-up" data-aos-easing="ease-in-sine">
                     <img src="logo/prog_skills.png" alt="Progammning Skill Image">
                     <h2>Web Based Skills</h2>
                     <p>Proficient in HTML, CSS, Django, and JavaScript, creating dynamic and visually appealing web experiences with a focus on user-centric design and functionality.</p>
                 </div>
 
-                <div class="card" id="skill_3">
+                <div class="card" id="skill_3" data-aos="fade-left" data-aos-easing="ease-in-sine">
                     <img src="logo/prog_skills.png" alt="Progammning Skill Image">
                     <h2>Database Skills</h2>
                     <p>Proficient in SQL, MySQL, and other database technologies, ensuring efficient data management and optimization for robust and scalable applications.</p>
                 </div>
 
-                <div class="card" id="skill_4">
+                <div class="card" id="skill_4" data-aos="fade-down" data-aos-easing="ease-in-sine">
                     <img src="logo/prog_skills.png" alt="Progammning Skill Image">
                     <h2>Scripting Skills</h2>
                     <p>Proficient in scripting languages like Python, JavaScript, and Bash, automating tasks and enhancing workflows to improve efficiency and productivity.</p>
                 </div>
 
-                <div class="card" id="skill_5">
+                <div class="card" id="skill_5" data-aos="fade-left" data-aos-easing="ease-in-sine">
                     <img src="logo/prog_skills.png" alt="Progammning Skill Image">
                     <h2>Development Tools</h2>
                     <p>Experienced in utilizing development tools such as PyCharm, VS Code, SQL Developer, and Oracle Apex for efficient coding, debugging, and database management.</p>
                 </div>
 
-                <div class="card" id="skill_6">
+                <div class="card" id="skill_6" data-aos="fade-right" data-aos-easing="ease-in-sine">
                     <img src="logo/prog_skills.png" alt="Progammning Skill Image">
                     <h2>Others</h2>
                     <p>Proficient in Git version control, command-line interface (CLI), and familiarity with agile methodologies, enabling effective collaboration and streamlined development processes.</p>
@@ -86,8 +92,13 @@
         </section>
 
         <section class="interest" id="interest">
+
+            <div class="interest-title" data-aos="fade-left" data-aos-easing="ease-in-sine">
+                <p>INTEREST</p>
+                <h1>INTEREST</h1>
+            </div>
             <div class="hobby">
-                <div class="hobby_list">
+                <div class="hobby_list" data-aos="fade-up-left" data-aos-easing="ease-in-sine">
 
                     <div> 
                         <img src="images/hobbies/reading.avif" alt="">
@@ -113,14 +124,14 @@
                 </div>
                 <!-- <div class="hobby_img">
                 </div> -->
-                <img src="images/hobby.jpg" alt="">
+                <img src="images/hobby.jpg" alt="" data-aos="fade-up-right" data-aos-easing="ease-in-sine">
             </div>
             <div class="gaming">
                 <!--<div class="gaming_img">
                 </div>-->
-                <img src="images/game.jpg" alt="">
+                <img src="images/game.jpg" alt="" data-aos="fade-down-left" data-aos-easing="ease-in-sine">
 
-                <div class="gaming_list">
+                <div class="gaming_list" data-aos="fade-down-right" data-aos-easing="ease-in-sine">
                     <div class="valorant">
                         <img src="images/gaming/valorant.png" alt="">
                     </div>
@@ -133,12 +144,19 @@
             </div>
         </section>
 
-        <section class="education">
+        <section class="education" id="education">
 
-            <h1>
-                Education
-            </h1>
-            <div class="accordion">
+            
+            <div class="education-title" data-aos="fade-left" data-aos-easing="ease-in-sine">
+
+                <p>EDUCATION</p>
+                <h1>
+                    EDUCATION
+                </h1>
+
+            </div>
+
+            <div class="accordion" data-aos="fade-right" data-aos-easing="ease-in-sine">
                 <div class="accordion-content">
                     <header>
                         <span class="title"> Junior School Certificate </span>
@@ -193,8 +211,114 @@
             </div>
         </section>
 
+        <section class="project" id="project">
+
+            <header data-aos="fade-left" data-aos-easing="ease-in-sine">
+                <p>MY WORK</p>
+                <h1>RECENT WORK</h1>
+            </header>
+
+            <ul class="project-field" data-aos="fade-topmc"39 data-aos-easing="ease-in-sine">
+                <li><p>Graphics Desing</p></li>
+                <li><p>Web Design</p></li>
+                <li><p>Software</p></li>
+                <li><p>Apps</p></li>
+            </ul>
+            
+            <div class="projects">
+
+                <div class="project-cards">
+                    <div class="project-card-details restaurant" data-aos="fade-left">
+                        <!--<img src="images//Projects/restaurant.jpg" alt=""> -->
+                        <div class="project-card-body">
+                            <h1>REAL FOOD DAILY</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, nobis dicta porro nostrum eveniet nemo?</p>
+                            <button>LEARN MORE</button>
+                        </div>
+                    </div>
+                    <div class="project-card-details hotel" data-aos="fade-right">
+                        <div class="project-card-body">
+                            <h1>HOTEL BOOKING</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, nobis dicta porro nostrum eveniet nemo?</p>
+                            <button>LEARN MORE</button>
+                        </div>
+                    </div>
+                    <div class="project-card-details house" data-aos="fade-right">
+                        <div class="project-card-body">
+                            <h1>HOUSING RENTAL</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, nobis dicta porro nostrum eveniet nemo?</p>
+                            <button>LEARN MORE</button>
+                        </div>
+                    </div>
+                    <div class="project-card-details hospital" data-aos="fade-left">
+                        <div class="project-card-body">
+                            <h1>HEALTH CARE</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, nobis dicta porro nostrum eveniet nemo?</p>
+                            <button>LEARN MORE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="contact" id="contact"> 
+            <div class="contact-title" data-aos="fade-left" data-aos-easing="ease-in-sine">
+                <p>GET IN TOUCH</p>
+                <h1>CONTACT</h1>
+            </div>
+
+            <div class="contact-content">
+
+                <div class="contact-info">
+                    <div data-aos="zoom-in-left">
+                        <div class="icon">
+                            <i class="fa-solid fa-map"></i>
+                        </div>
+
+                        <div class="info-details info-mail">
+                            <p> info@domain.com </p>
+                        </div>
+                    </div>
+
+                    <div data-aos="zoom-in-right">
+                        <div class="icon">
+
+                            <i class="fa-solid fa-map"></i>
+                        </div>
+
+                        <div class="info-details">
+                           <p> 123 East 22th Street, Sute <br/> 722 Florida F 20020 </p>
+                        </div>
+                    </div>
+                    
+                    <div  data-aos="zoom-in-left">
+                        <div class="icon">
+                            <i class="fa-solid fa-map"></i>
+                        </div>
+
+                        <div class="info-details info-phone">
+                            <p> +88-01723432464 </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-me">
+                    <input type="text" placeholder="Name" data-aos="fade-right">
+                    <input type="email" placeholder="Email" data-aos="fade-left">
+                    <input type="text" placeholder="Subject" data-aos="fade-right">
+                    <textarea name placeholder="Message" rows="7" cols="30" data-aos="fade-left"></textarea>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <script src="education.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 </html>

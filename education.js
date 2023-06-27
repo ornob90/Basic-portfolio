@@ -25,6 +25,11 @@ function removeOpen(index){
     accordionContent.forEach((item2, index2) => {
         if(index != index2) {
             item2.classList.remove("open");
+
+            let des = item2.querySelector(".description");
+            des.style.height = "0px";
+            item.querySelector("i").classList.replace("fa-minus", "fa-plus");
+
         }
     })
 }
